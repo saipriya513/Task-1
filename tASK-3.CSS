@@ -1,0 +1,79 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Game Container */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+  }
+  
+  /* Header and Game Status */
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .status {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    margin-top: 20px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Tic-Tac-Toe Grid */
+  .board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .board div {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    border: 2px solid #333;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .board div:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* X and O styling */
+  .x {
+    color: #e74c3c;
+  }
+  
+  .o {
+    color: #3498db;
+  }
+  
